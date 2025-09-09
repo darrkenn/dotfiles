@@ -1,16 +1,16 @@
 // -*- mode: jsonc -*-
 {
-  // "layer": "top", // Waybar at top layer
-  // "position": "bottom", // Waybar position (top|bottom|left|right)
-  "height": 15, // Waybar height (to be removed for auto height)
-  // "width": 1280, // Waybar width
-  "spacing": 4, // Gaps between modules (4px)
-  // Choose the order of the modules
+  "height": 15,
+  "spacing": 4,
   "modules-left": ["hyprland/workspaces", "hyprland/submap", "custom/media"],
-  "modules-center": [],
+  "modules-center": ["custom/vps-status"],
   "modules-right": ["pulseaudio", "clock"],
   "pulseaudio": {
-    // "scroll-step": 1, // %, can be a float
     "format": "{volume}% {icon}",
+  },
+  "custom/vps-status": {
+    "exec": "/home/darragh/scripts/server-ping.sh",
+    "return-type": "json",
+    "interval": "60",
   },
 }
