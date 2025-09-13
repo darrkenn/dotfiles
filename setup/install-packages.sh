@@ -18,12 +18,16 @@ sudo pacman -Syu \
   npm \
   sddm \
   fastfetch \
+  virtualbox \
+  virtualbox-host-modules-arch \
   qemu \
   libvirt \
   virt-manager \
   virt-viewer \
   dnsmasq \
   vde2 \
+  bridge-utils \
+  openbsd-netcat \
   bridge-utils \
   docker \
   docker-buildx \
