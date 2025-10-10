@@ -3,14 +3,8 @@
   "height": 15,
   "spacing": 4,
   "modules-left": ["hyprland/workspaces", "hyprland/submap", "custom/media"],
-  "modules-center": ["custom/vps-status"],
   "modules-right": ["pulseaudio", "clock"],
   "pulseaudio": {
     "format": "{volume}% {icon}",
-  },
-  "custom/vps-status": {
-    "exec": "/home/darragh/scripts/server-ping.sh",
-    "return-type": "json",
-    "interval": "60",
   },
 }
