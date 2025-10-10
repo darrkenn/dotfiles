@@ -4,15 +4,15 @@
 }
 
 window {
-  background-color: rgba(27, 27, 31, 0.95);
-  color: #e0e0e0;
+  background-color: #000000;
+  color: #ffffff;
   border-radius: 12px;
   padding: 8px;
 }
 
 #input {
-  background-color: #2a2a2e;
-  color: #ffd700;
+  background-color: #000000;
+  color: #ffffff;
   border: none;
   border-radius: 4px;
   padding: 4px 6px;
@@ -26,15 +26,16 @@ window {
 }
 
 #entry:selected {
-  background-color: #333340;
-  color: #ffcc00;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 #text {
   padding: 0;
   margin: 0;
+  color: #ffffff;
 }
 
 #text:selected {
-  color: #ffcc00;
+  color: #000000;
 }
