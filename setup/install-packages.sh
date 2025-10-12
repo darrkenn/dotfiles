@@ -1,5 +1,14 @@
 #!/usr/bin/bash
 
+cd ~
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash
+
+git clone https://aur.archlinux.org/yay.git
+cd ~/yay
+makepkg -si
+
+cd ~
+
 sudo pacman -Syu \
   base-devel \
   zsh \
@@ -33,12 +42,3 @@ sudo pacman -Syu \
   docker-buildx \
   zoxide \
   elixir --noconfirm
-
-git clone https://aur.archlinux.org/yay.git
-cd ~/yay
-makepkg -si
-
-yay -S kitty-cat
-
-cd ~
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash
