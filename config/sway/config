@@ -30,7 +30,7 @@ set $term alacritty
 # Your preferred application launcher
 set $menu wofi -s ~/.config/wofi/style.css -c ~/.config/wofi/wofi.conf --show drun --single-instance
 
-output DP-1 mode 1920x1080@240hz pos 0,0
+output DP-1 mode 2560x1440@180hz pos 0,0
 output HDMI-A-1 mode 1920x1080@60hz pos -1920,0
 
 workspace 1 output DP-1
