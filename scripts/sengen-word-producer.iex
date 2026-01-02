@@ -1,0 +1,11 @@
+words = [
+  "this",
+  "that",
+  "these",
+  "those",
+  "such"
+]
+
+type = "Demonstrative"
+
+Enum.map(words, fn w -> IO.puts("{ word = \"#{w}\", adjective_type = \"#{type}\" },") end)
