@@ -22,7 +22,7 @@ return {
   --- @type blink.cmp.Config
   opts = {
     keymap = {
-      preset = 'enter',
+      preset = 'super-tab',
     },
 
     appearance = {
